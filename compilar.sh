@@ -10,7 +10,7 @@ mkdir -p "$TMP/modulos"
 for f in "$RAIZ"/gamemodes/modulos/*.inc; do
   iconv -f UTF-8 -t LATIN1 "$f" > "$TMP/modulos/$(basename "$f")"
 done
-icov -f UTF-8 -t LATIN1 "$RAIZ/gamemodes/malagacity.pwn" > "$TMP/malagacity.pwn"
+iconv -f UTF-8 -t LATIN1 "$RAIZ/gamemodes/malagacity.pwn" > "$TMP/malagacity.pwn"
 PAWNCC="${PAWNCC:-pawncc}"
 cd "$TMP"
 "$PAWNCC" malagacity.pwn -i"$RAIZ/include" -d3 -o"$RAIZ/gamemodes/malagacity.amx"
