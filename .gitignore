@@ -1,0 +1,5 @@
+mysql.ini
+config.json
+*.amx
+*.log
+logs/

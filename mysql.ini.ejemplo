@@ -1,0 +1,5 @@
+hostname = 127.0.0.1
+username = gamerol
+password = cambia_esto
+database = gamerol
+auto_reconnect = true
